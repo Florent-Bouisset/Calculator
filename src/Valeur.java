@@ -4,7 +4,7 @@
  *
  */
 public class Valeur extends Terme {
-	double valeur;
+	private double valeur;
 	
 	Valeur(){
 		super(TermeType.valeur);
@@ -16,4 +16,11 @@ public class Valeur extends Terme {
 		this.valeur = valeur;
 	}
 
+	public double getValeur() {
+		return valeur;
+	}
+	
+	public String toString() {
+		return String.valueOf(valeur);
+	}
 }

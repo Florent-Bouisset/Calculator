@@ -6,7 +6,7 @@ public class Sinus extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a){
-		double result = Math.sin(a.valeur);
+		double result = Math.sin(a.getValeur());
 				
 		return new Valeur(result);
 	}

@@ -6,7 +6,10 @@ public class Division extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a, Valeur b){
-		double result = a.valeur / b.valeur;
+		if(b.getValeur() == 0) {
+			throw new ArithmeticException("division par zero");
+		};
+		double result = a.getValeur() / b.getValeur();
 		return new Valeur(result);
 	}
 	

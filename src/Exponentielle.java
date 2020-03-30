@@ -5,7 +5,7 @@ public class Exponentielle extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a){
-		double result = Math.exp(a.valeur);
+		double result = Math.exp(a.getValeur());
 				
 		return new Valeur(result);
 	}

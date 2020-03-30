@@ -6,7 +6,7 @@ public class Multiplication extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a, Valeur b){
-		double result = a.valeur * b.valeur;
+		double result = a.getValeur() * b.getValeur();
 		return new Valeur(result);
 	}
 	

@@ -6,7 +6,7 @@ public class AuCarre extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a){
-		double result = a.valeur * a.valeur;
+		double result = a.getValeur() * a.getValeur();
 		return new Valeur(result);
 	}
 	

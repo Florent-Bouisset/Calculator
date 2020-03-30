@@ -17,8 +17,7 @@ public class Operateur extends TermeIndecomposable {
 	NiveauPriorite niveauPriorite;
 	
 	Operateur(String nom, String symboleBtn, String symboleCnsle, Boolean termeAvant,
-			Boolean termeApres, NiveauPriorite niveauPriorite){
-		
+			Boolean termeApres, NiveauPriorite niveauPriorite){		
 		super(TermeType.operateur, nom, symboleBtn, symboleCnsle);
 		this.termeAvant = termeAvant;
 		this.termeApres = termeApres;

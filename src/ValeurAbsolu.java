@@ -6,7 +6,7 @@ public class ValeurAbsolu extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a){
-		double result = Math.abs(a.valeur);
+		double result = Math.abs(a.getValeur());
 				
 		return new Valeur(result);
 	}

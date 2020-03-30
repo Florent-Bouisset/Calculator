@@ -6,7 +6,7 @@ public class Cosinus extends Operateur{
 	
 	@Override
 	Valeur Calcul(Valeur a){
-		double result = Math.cos(a.valeur);
+		double result = Math.cos(a.getValeur());
 				
 		return new Valeur(result);
 	}
